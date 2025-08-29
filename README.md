@@ -1,15 +1,14 @@
-```mermaid
 graph TD
-    subgraph 顧客 (作業者)
+    subgraph customer[顧客 (作業者)]
         A[合理的配慮窓口にメールを送付]
     end
 
-    subgraph ツール
+    subgraph tool[ツール]
         B[Gmail]
         C[Salesforce]
     end
     
-    subgraph サポート (作業者)
+    subgraph support[サポート (作業者)]
         D{一次仕分け}
         E[返信対象外のフラグをつける]
         F[採用関連のフラグをつける]
@@ -18,11 +17,11 @@ graph TD
         I[返信対象外フラグをつける]
     end
 
-    subgraph 合理的配慮委員会 (作業者)
+    subgraph committee[合理的配慮委員会 (作業者)]
         J{回答が必要か判断}
     end
     
-    subgraph 採用 (作業者)
+    subgraph hiring[採用 (作業者)]
         K[Slackで連携]
         L[返信を行う]
     end
@@ -46,3 +45,4 @@ graph TD
     L -- 完了 --> M
     E -- 完了 --> M
     K -- 完了 --> L
+    
