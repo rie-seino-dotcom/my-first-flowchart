@@ -1,4 +1,4 @@
-# my-first-flowchartgraph TD
+graph TD
     subgraph 顧客 (作業者)
         A[合理的配慮窓口にメールを送付]
     end
